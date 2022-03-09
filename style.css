@@ -1,0 +1,428 @@
+*{
+    box-sizing: border-box;
+    font-family:'Fira Sans', sans-serif; 
+
+}
+body{
+    margin: 0;
+    padding: 0;
+    
+}
+h2{
+    font-family: 'Fira Sans', sans-serif;
+    font-weight: bolder;
+    color:white;
+    text-align:center;
+    font-size: 25px;
+
+}
+.about-me-dotted{
+    border: dotted 6px white;
+    color: aliceblue;
+    border-bottom: none;
+    margin:20px auto ;
+    width: 70px;
+}
+.underline{
+    width: 80%;
+}
+/*navbar design starts here*/
+
+.navbar{
+    background: rgba(64, 64, 179, 0.822);
+    padding: 1% 7%;
+    text-align: center;
+}
+
+.navbar h1{
+    font-size: 45px;
+    text-align: center;
+    color: wheat;
+    margin: 0;
+    
+}
+a{
+    font-size:20px ;
+    text-decoration: none;
+   
+    
+}
+p{
+    font-size: 23px;
+    font-family: 'Montserrat', sans-serif; 
+    color: white;  
+}
+strong{
+    font-size: 22px;
+}
+
+[class*="col-"]{
+    float: left;
+    padding: 10px;
+}
+
+/* for mobile*/
+[class*="col-"]{
+    width:100% ;
+}
+.navbar::after{
+    content: '';
+    display: table;
+    clear: both;
+}
+.menu{
+    display: flex;
+   flex-direction: column;
+   width: 100%;
+}
+.menu a{
+    background:rgb(12, 12, 95);
+    margin: 7px 0;
+    padding: 10px;
+    border-radius: 10px;
+    
+}
+.menu a:hover{
+    background: gray;
+}
+/*navbar design ends here*/
+/* profile desing starts here */
+.profile{
+    padding: 130px 20px;
+    text-align: center;
+    position: relative;
+}
+.profile .top-weather-icon{
+    position: absolute;
+    right: 50px;
+    top: 20px;
+    transition: transform 2s;
+}
+.profile .top-weather-icon:hover{
+  transform: rotate(360deg);
+}
+.profile-descr h1{
+font-family: 'Satisfy', cursive;
+font-size: 45px;
+text-align: center;
+margin: px 0;
+}
+.profile-descr p{
+    color:black;
+    font-family:'Montserrat', sans-serif; 
+}
+.profile .bottom-weather-icon{
+    position: absolute;
+    left: 50px;
+    bottom: 20px;
+    transition: transform 2s;
+}
+.profile .bottom-weather-icon:hover{
+    transform: rotate(360deg);
+  }
+  .profile-descr p{
+    font-family: 'Fira Sans', sans-serif;
+    width:90%;
+    margin: 5px 40px;
+    text-align: center;
+
+  }
+  .profile::after{
+     content: '';
+     display: table;
+     clear: both
+
+  }
+/* profile desing ends here */
+/* about me section starts here */
+.about-me{
+    background: #719cec;
+    padding: 10px 0;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+    
+}
+.about-me-img img{
+    width:200px;
+    height: 200px;
+    border: 4px solid white;
+    border-radius: 50%;
+    text-align: center;
+}
+.about-me p{
+    text-align: center
+}
+.cv-button{
+    background:#245C52 ;
+    color:white;
+    font-size: 15px;
+    border: none;
+    padding: 10px;
+    border-radius: 10px;
+    margin: 10px;
+    cursor: pointer;
+}
+
+.about-me::after{
+    content: '';
+    display: table;
+    clear: both;
+
+}
+/* about me section ends here */
+/* professional experience section starts here */
+
+/* professional experience section ends here */
+/* education section starts here */
+.professional-experience{
+    padding: 1% 0;
+}
+.professional-experience .card{
+    background:#948b8e ;
+    height: 820px;
+    padding: 20px;
+    border-radius: 10px;
+    transition: 0.3s;
+}
+.professional-experience .card:hover{
+    border: 2px solid black;
+    box-shadow: 10px 10px 10px;
+
+}
+.work-icon{
+    margin: 20px;
+    text-align: center;
+}
+.work-icon img{
+    width: 110px;
+    height: 110px;
+    border: 5px solid white;
+    border-radius: 50%;
+    padding: 15px;
+}
+.work-title h2{
+    background:#4d4246 ;
+    padding: 10px;
+}
+
+.skill-container{
+    padding-right:45px ;
+}
+.skill-container li{
+    list-style: none;
+    margin: 35px 5px ;
+    font-weight: bolder;
+    text-transform: uppercase;
+    font-size: 20px;
+    position: relative;
+}
+.skill-container li::before{
+    content: '';
+    position: absolute;
+    width:100% ;
+    height: 20px;
+    top: calc(100% + 5px);
+    background:#a78ecc ;
+    border-radius: 1000px;
+    left: 0;
+}
+.skill-container li::after{
+    content: '';
+    position: absolute;
+    width:0 ;
+    height: 20px;
+    top: calc(100% + 5px);
+    background:#4f2490 ;
+    border-radius: 1000px;
+    left: 0;
+
+    animation-duration: 3s;
+    animation-timing-function: linear;
+    animation-delay: 2s;
+    animation-iteration-count:infinite;
+    animation-fill-mode: forwards;
+    
+    
+}
+.skill-container li.html::after{
+    animation-name:html;
+}
+@keyframes html{
+    to{
+        width:80%;
+    }
+}
+.skill-container li.css::after{
+    animation-name: css;
+}
+@keyframes css{
+    to{
+        width: 75%;
+    }
+}
+.skill-container li.bootstrap::after{
+    animation-name: bootstrap;
+
+}
+@keyframes bootstrap{
+    to{
+        width: 89%;
+    }
+}
+.skill-container li.javascript::after{
+    animation-name: javascript;
+
+}
+@keyframes javascript{
+    to{
+        width: 69%;
+    }
+}
+.skill-container li.jquery::after{
+    animation-name: jquery;
+
+}
+@keyframes jquery{
+    to{
+        width: 84%;
+    }
+}
+.skill-container li.node::after{
+    animation-name: node;
+
+}
+@keyframes node{
+    to{
+        width: 95%;
+    }
+}
+.skill-container li.expressjs::after{
+    animation-name: expressjs;
+
+}
+@keyframes expressjs{
+    to{
+        width: 55%;
+    }
+}
+.skill-container li.github::after{
+    animation-name: github;
+
+}
+@keyframes github{
+    to{
+        width: 55%;
+    }
+}
+.skill-container li.reactjs::after{
+    animation-name: reactjs;
+
+}
+@keyframes reactjs{
+    to{
+        width: 75%;
+    }
+}
+
+
+.professional-experience::after{
+    content: '';
+    display: table;
+    clear: both;
+}  
+/* education section ends here */
+
+/* achivement contact section starts form here */
+.achivent-contact{
+    background: #719cec;
+    padding: 1% 3%;
+}
+ .achievents{
+    padding: 0 2%;
+    text-align: justify;
+}
+.contact-me{
+    text-align: center;
+}
+.contact-me, input,textarea{
+    width: 100%;
+    border: none;
+    border-radius: 5px;
+    text-align: center;
+    font-size: 20px;
+    padding: 10px;
+    resize: none;
+
+}
+.contact-me button{
+    background: #245C52;
+    padding: 10px;
+    margin: 5px 5px;
+    color: white;
+    width: 130px;
+    font-size: 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+.more-contact{
+    text-align: center;
+}
+.media-button .btn{
+    color:tomato;
+    border: none;
+    font-size: 30px;
+    padding: 10px;
+    border-radius: 50%;
+    width: 50px;
+    cursor: pointer;
+    background: white;
+    margin: 10px;
+    mar
+}
+.media-button .btn:hover{
+    background:gray;
+}
+
+.achivent-contact::after{
+    content: '';
+    display: table;
+    clear: both;
+}  
+/* achivement contact section ends here */
+
+/* footer startst from here */
+.footer{
+    background: black;
+   
+}
+.footer-menu{
+    text-align: center;
+    display: block;
+}
+.footer-menu a{
+    color: white;
+    font-size: 15px;
+    display: block;
+    padding: 15px 0;
+    border-radius: 5px;
+    margin: 0 auto;
+   
+}
+.footer-menu a:hover{
+    background: gray;
+}
+.footer-des{
+    color: white;
+    text-align: center;
+}
+.footer-des span{
+    font-size:25px;
+}
+.footer::after{
+    content: '';
+    display: table;
+    clear: both;
+}
+/* footer startst ends here */

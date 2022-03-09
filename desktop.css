@@ -1,0 +1,139 @@
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+
+/* navbar design starts here */
+.logo{
+    float: left;
+}
+.heading h1{
+   
+    text-align: center;
+    margin-top: 20px;
+}
+.menu{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    padding-top: 30px;
+   
+}
+.menu a{
+    margin: 5px 2px;
+    padding: 10px 12px;
+    background-color: transparent;
+}
+/* navbar design ends here */
+
+/* profile design starts here */
+.profile-descr{
+    width: 70%;
+    margin: 0 auto;
+}
+.profile .top-weather-icon{
+    position: absolute;
+    right: 100px;
+    top: 40px;
+    transition:  width 2s, transform 2s;
+}
+.profile .top-weather-icon:hover{
+ width: 140px;
+ 
+}
+.profile-descr h1{
+    font-size: 45px;
+    margin:30px 220px;
+    text-align: center;
+    }
+    .profile-descr p{
+        margin: 5px 10px 0px 60px;
+        text-align: center;
+        width: 70%;
+        margin: 0 auto;
+      }
+      .profile .bottom-weather-icon{
+    
+        left: 100px;
+        bottom: 40px;
+        transition:  width 2s, transform 2s;
+        padding-top: 40px;
+    }
+    .profile .bottom-weather-icon:hover{
+     width: 140px;
+     
+    }
+/* profile design ends here */
+/* about me section starts */
+
+
+.about-me-img img{
+    width: 250px;
+    height: 230px;
+}
+
+.about-me p{
+    text-align: left
+}
+.underline{
+    width: 100%;
+}
+/* about me section ends */
+
+
+/* profeessonal experience section :starts here */
+.professional-experience{
+    padding: 1% 2%;
+}
+/* profeessonal experience section :starts here */
+
+
+/* achivements contact section start from here */
+    .achievents{
+        padding-right: 55px;
+    }
+    .contact-me button{
+        width: 130px;
+    }
+    .more-contact{
+        position: relative;
+
+    }
+    .media-button{
+        position: absolute;
+        margin-top: 170px;
+        top:50%;
+        left: 50%;
+        transform: translate(-50% ,-50%);
+    }
+
+/* achivements contact section ends here */
+
+/* footer starts from here */
+.footer{
+    height: 90px;
+}
+.footer-menu{
+    margin-top: 30px;
+}
+.footer-menu a{
+    display: inline;
+    padding: 10px;
+}
+.footer-des{
+    margin-top: 18px; 
+    text-align: right;
+    text-align:center;
+}
+
+/* footer ends here */
+
+
